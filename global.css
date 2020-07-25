@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #111111;
+}
+
+.content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+}
+
+header {
+    padding: 30px;
+    padding-left: 0;
+    display: flex;
+}
+
+header img {
+    padding-right: 122.4px;
+}
+
+.header__links a {
+    margin-left: 30px;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #111111;
+}
+
+.banner {
+    background-color: #FBDFDB;
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.banner__img {
+    margin-left: 50%;
+    padding-left: 140px;
+}
+
+.banner__img img {
+    padding-top: 100px;
+}
+
+.banner__text {
+    margin-right: 50%;
+    position: relative;
+    justify-content: center;
+    top: -260px;
+    padding-left: 60px;
+}
+
+.banner__text h1 {
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+
+.banner__text h3 {
+    opacity: 0.7;
+    font-size: 18px;
+    color: #000000;
+    line-height: 28px;
+}
+
+.main_content {
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+
+/* cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: 33fr 33fr 33fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.card__img img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card__info {
+    margin: 5px;
+}
+
+.card__info h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card__info h3 {
+    font-size: 14px;
+    color: #777777;
+}
+
+
+/* footer */
+
+.container {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.footer {
+    background: #EEEEEE;
+    height: 62px;
+    width: 100%;
+}
+
+.footer h3 {
+    color: #999999;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 16px;
+}
+
+
+/* Pagina Sobre */
+
+.h1sobre {
+    margin-bottom: 5px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.paragrafo {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+
+/* Modal */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #FFF;
+    width: 660px;
+    margin: 200px auto;
+    position: relative;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+#modal-content .card {
+    cursor: pointer;
+}
+
+#modal-content img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+#modal-content .card__info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#modal-content .card__info h1 {
+    font-size: 24px;
+    color: #111111;
+}
+
+#modal-content .card__info h3 {
+    font-size: 18px;
+    color: #777777;
+    font-weight: 400;
+}
+
+.close-modal {
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+
+/* modal active */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* responsivel */
+
+@media only screen and (max-width: 600px) {
+    .content {
+        max-width: 500px;
+        margin: 5px;
+        margin: 0 auto;
+    }
+    .banner {
+        display: none;
+    }
+    .header__links a {
+        padding-bottom: 5px;
+    }
+    .modal {
+        width: 300px;
+        margin: 100px auto;
+        position: relative;
+        border-radius: 16px;
+        padding: 10px;
+    }
+    .cards {
+        grid-template-columns: 50fr 50fr;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content {
+        max-width: 300px;
+        margin: 5px;
+        margin: 0 auto;
+    }
+    .banner {
+        display: none;
+    }
+    .header__links a {
+        padding-bottom: 5px;
+    }
+    .modal {
+        width: 200px;
+        margin: 100px auto;
+        position: relative;
+        border-radius: 16px;
+        padding: 10px;
+    }
+    .cards {
+        grid-template-columns: 50fr 50fr;
+        gap: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+}
