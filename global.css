@@ -263,12 +263,9 @@ p {
         padding: 10px;
     }
     .cards {
-        grid-template-columns: 50fr 50fr;
+        grid-template-columns: 100fr;
         gap: 10px;
         padding-left: 5px;
         padding-right: 5px;
     }
-}
-
-
 }
