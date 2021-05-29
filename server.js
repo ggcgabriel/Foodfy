@@ -19,14 +19,17 @@ server.get("/" , function(req, res) {
     return res.render("index")
 })
 
-server.get("/receitas" , function(req, res) {
-    return res.render("/receitas")
+server.get("/sobre.html" , function(req, res) {
+    return res.render("sobre")
 })
 
-server.get("/sobre" , function(req, res) {
-    return res.render("/sobre")
+server.get("/receitas.html" , function(req, res) {
+    return res.render("receitas")
 })
 
+
+
+// server
 server.listen(5000, function(){
     console.log('server is running')
 })
