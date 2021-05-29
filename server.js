@@ -5,7 +5,7 @@ const server =  express()
 
 server.use(express.static('public'))
 
-server.set("view engine", "html")
+server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express: server
@@ -16,14 +16,14 @@ nunjucks.configure("views", {
 
 // rotas
 server.get("/" , function(req, res) {
-    return res.render("index")
+    return res.render("home")
 })
 
-server.get("/sobre.html" , function(req, res) {
+server.get("/sobre" , function(req, res) {
     return res.render("sobre")
-})
+})  
 
-server.get("/receitas.html" , function(req, res) {
+server.get("/receitas" , function(req, res) {
     return res.render("receitas")
 })
 
